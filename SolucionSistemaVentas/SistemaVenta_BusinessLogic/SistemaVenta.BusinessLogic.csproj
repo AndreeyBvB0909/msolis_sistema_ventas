@@ -1,9 +1,14 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
   </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\SistemaVenta.Entity\SistemaVenta.Entity.csproj" />
+    <ProjectReference Include="..\SistemaVenta_DT\SistemaVenta.DT.csproj" />
+  </ItemGroup>
 
 </Project>
