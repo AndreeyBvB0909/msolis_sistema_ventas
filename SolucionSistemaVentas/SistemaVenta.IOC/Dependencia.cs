@@ -18,5 +18,12 @@ namespace SistemaVenta.IOC
 {
     public static class Dependencia
     {
+        public static void InyectarDependencia(this IServiceCollection services, IConfiguration configuration)
+        {
+            services.AddDbContext<DBVENTAContext>(options =>
+            {
+                options.UseSqlServer(configuration.GetConnectionString("CadenaSQL"));
+            });
+        }
     }
 }
